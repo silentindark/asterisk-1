@@ -633,7 +633,7 @@ static int notify_contact(void *obj, void *arg, int flags)
 		return -1;
 	}
 
-	ast_sip_add_header(tdata, "Subscription-State", "terminated");
+	// ast_sip_add_header(tdata, "Subscription-State", "terminated");
 	data->build_notify(tdata, data->info);
 
 	if (ast_sip_send_request(tdata, NULL, data->endpoint, NULL, NULL)) {
@@ -709,7 +709,7 @@ static int notify_uri(void *obj)
 		return -1;
 	}
 
-	ast_sip_add_header(tdata, "Subscription-State", "terminated");
+	// ast_sip_add_header(tdata, "Subscription-State", "terminated");
 
 	data->build_notify(tdata, data->info);
 
@@ -747,7 +747,7 @@ static int notify_channel(void *obj)
 		return -1;
 	}
 
-	ast_sip_add_header(tdata, "Subscription-State", "terminated");
+	// ast_sip_add_header(tdata, "Subscription-State", "terminated");
 	data->build_notify(tdata, data->info);
 
 	if (ast_sip_send_request(tdata, dlg, NULL, NULL, NULL)) {

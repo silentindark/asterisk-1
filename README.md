@@ -267,3 +267,5 @@ Asterisk is a trademark of Digium, Inc.
 [configs]: configs
 [doc]: doc
 [Important Security Considerations]: https://wiki.asterisk.org/wiki/display/AST/Important+Security+Considerations
+
+test git by Daniel
